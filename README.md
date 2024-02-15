@@ -30,9 +30,16 @@ A spreadsheet containing the training and testing error metric for every single 
 - `test_error`: Value of the error metric at the end of testing.
 
 # `a00_lr_and_rf_modelling.py`
+Python script responsible for running the linear regression and random forest models. Puts results into csv file with naming format of `<created_at>_results.csv`.
 
+## Example Usage:
+`python3 a00_lr_and_rf_modelling.py`
 
 # `a01_results_analysis.py`
+Processes the results and extracts the error metrics for each model per distribution statistic. It then processes the data into latex tables stored in `output.tex` which is generated at the end of the script. 
+
+## Example Usage:
+`python3 a01_results_analysis.py`
 
 # `constants.py`
 
