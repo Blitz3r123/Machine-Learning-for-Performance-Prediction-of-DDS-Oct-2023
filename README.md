@@ -11,25 +11,26 @@ Here is a run down of the contents of this repository:
 
 # `2024-02-07_16-48-03_results.csv`
 A spreadsheet containing the training and testing error metric for every single model. It has the following columns:
-- `model_type`
+- `model_type`: Either Linear Regression or Random Forests. 
 - `created_at`
-- `int_or_ext`
-- `train_dataset`
-- `train_dataset_filename`
-- `test_dataset`
-- `test_dataset_filename`
-- `train_example_count`
-- `test_example_count`
-- `input_variables`
-- `output_variable`
-- `metric_of_interest`
-- `standardisation_function`
-- `transform_function`
-- `error_type`
-- `train_error`
-- `test_error`
+- `int_or_ext`: Interpolation or Extrapolation.
+- `train_dataset`: Name of the train dataset.
+- `train_dataset_filename`: Filename of the training dataset.
+- `test_dataset`: Name of the test dataset.
+- `test_dataset_filename`: Filename of the testing dataset.
+- `train_example_count`: How many rows are in the training dataset.
+- `test_example_count`: How many rows are in the testing dataset.
+- `input_variables`: Input variables for the model.
+- `output_variable`: Target/output variable for model.
+- `metric_of_interest`: DDS metric that we are focusing on for this model e.g. latency_us.
+- `standardisation_function`: Self-explanatory.
+- `transform_function`: Self-explanatory.
+- `error_type`: Error metric used to evaluate model performance e.g. RMSE.
+- `train_error`: Value of the error metric at the end of training.
+- `test_error`: Value of the error metric at the end of testing.
 
 # `a00_lr_and_rf_modelling.py`
+
 
 # `a01_results_analysis.py`
 
