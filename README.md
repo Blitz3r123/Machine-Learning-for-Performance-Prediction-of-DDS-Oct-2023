@@ -42,5 +42,7 @@ Processes the results and extracts the error metrics for each model per distribu
 `python3 a01_results_analysis.py`
 
 # `constants.py`
+All constants used in the scripts e.g. `DDS_METRICS`, `STATS`, `STANDARDISATION_FUNCTIONS`, etc.
 
 # `test_a01_results_analysis.py`
+Unit test for `a01_results_analysis.py`. It's automatically run when you run `a01_results_analysis.py`.
